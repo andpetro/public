@@ -6,5 +6,5 @@ Copyright 2020 Andrei. """
 import os
 import time
 
-a=2
-print (a)
+a = 2
+print(a)
