@@ -1,2 +1,7 @@
-import re
-import time
+#! /usr/bin/env python
+
+""" first version of the script
+Copyright 2020 Andrei. """
+
+
+
