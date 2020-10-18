@@ -3,5 +3,4 @@
 """ first version of the script
 Copyright 2020 Andrei. """
 
-
-
+import os
