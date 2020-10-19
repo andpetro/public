@@ -1,15 +1,19 @@
-#! /usr/bin/env python
-
-""" first version of the script
-Copyright 2020 Andrei. """
-
 from sys import argv
 
-script, user_name = argv
-prompt = 'Cisco_IOS> '
+script, filename = argv
 
-print(f"Hi {user_name}, I'm the {script} script.")
-print("I'd like to ask you a few questions.")
-print(f"Do you like me {user_name}?")
-likes = input(prompt)
-print(likes)
+txt = open(filename)
+
+print(f"Here is your file {filename}:")
+
+print(txt.read())
+
+print("Type your filename again ")
+
+file_again = input(">")
+
+txt_again = open(file_again)
+
+print(txt_again.read())
+
+
