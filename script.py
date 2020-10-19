@@ -3,16 +3,13 @@
 """ first version of the script
 Copyright 2020 Andrei. """
 
-print("." * 10)
+from sys import argv
 
-months = "\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+script, user_name = argv
+prompt = 'Cisco_IOS> '
 
-tabby_cat = "\t* I'm tabbed in."
-
-print(tabby_cat)
-
-print("How old are you?", end=' ')
-
-age = input()
-
-print(f"So, you're {age} old")
+print(f"Hi {user_name}, I'm the {script} script.")
+print("I'd like to ask you a few questions.")
+print(f"Do you like me {user_name}?")
+likes = input(prompt)
+print(likes)
