@@ -38,10 +38,3 @@ for line in target:
 
 target.close()
 
-
-
-
-
-
-
-
