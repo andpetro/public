@@ -2,18 +2,15 @@ from sys import argv
 
 script, filename = argv
 
-txt = open(filename)
+print(f"""We're going to erase {filename}.
+If you don't want that, hit CTRL-C (^C).
+If you do want that, hit RETURN.""")
 
-print(f"Here is your file {filename}:")
+input("?")
 
-print(txt.read())
+target = open(filename, 'w')
 
-print("Type your filename again ")
+print(f"Say goodbuy to {filename}.")
 
-file_again = input(">")
-
-txt_again = open(file_again)
-
-print(txt_again.read())
-
+target.truncate()
 
