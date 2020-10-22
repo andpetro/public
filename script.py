@@ -1,40 +1,28 @@
 from sys import argv
+from os.path import exists
 
-script, filename = argv
+script, from_file, to_file = argv
 
-print(f"""We're going to erase {filename}.
-If you don't want that, hit CTRL-C (^C).
-If you do want that, hit RETURN.""")
+print(f"""Coping from {from_file} to {to_file}
+Are you ready?""")
 
 input("?")
 
-target = open(filename, 'w')
+in_file = open(from_file)
+indata = in_file.read()
 
-print(f"Say goodbuy to {filename}.")
+print(f"The input file is {len(indata)} bytes long")
 
-target.truncate()
 
-print("I'm goint to ask you for three lines")
+print(f"Does the output file exists? {exists(to_file)}")
+print("Ready, hit RETURN to continue, CTRL-C to abort")
 
-line1 = input("line1: ")
-line2 = input("line2: ")
-line3 = input("line3: ")
+input()
 
-print(f"Now I'm adding these lines to the {filename}")
+out_file = open(to_file, 'w')
+out_file.write(indata)
 
-target.write(line1)
-target.write("\n")
-target.write(line2)
-target.write("\n")
-target.write(line3)
+print("Allright, all done!")
 
-print("And finally, we close it.")
-target.close()
-
-target = open(filename, 'r')
-
-for line in target:
-    print(line)
-
-target.close()
-
+out_file.close()
+in_file.close()
