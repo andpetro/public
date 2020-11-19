@@ -1,5 +1,160 @@
+i = 0
+m = 99
+n = 5
+numbers =[]
+
+for i in range (0, m, n):
+  print(f"At the top i is {i}")
+  numbers.append(i)
+
+  #i = i + 1
+  print("Numbers now: ", numbers)
+
+  print(f"At the bottom i is {i}")
+
+print("The numbers: ")
+
+for num in numbers:
+  print(num)
 
 
+
+
+
+
+
+
+
+
+# the_count = [1, 2, 3, 4, 5]
+# fruits = ['apples', 'oranges', 'pears', 'apricots']
+# change = [1, 'pennies', 2, 'dimes', 3, 'quarters']
+
+# for number in the_count:
+#   print (f"This is count: {number}")
+
+# for fruit in fruits:
+#   print(f"A fruit of type: {fruit}")
+
+# for i in change:
+#   print(f"I got {i}")
+
+# elements = []
+
+# for i in range(0, 6):
+#   print(f"Adding {i} to the list")
+#   elements.append(i)
+
+# for i in elements:
+#   print(f"Element was: {i}")
+
+
+# test = [*range(0, 6)]
+# print(test)
+# print(elements)
+
+
+
+
+# print("""You enter a dark room with two doors.
+# Do you go through door #1 or door #2?""")
+
+# door = input("> ")
+
+# if door == "1":
+#   print("There's a giant bear here eating a chees cake")
+#   print("What do you do?")
+#   print("1. Take the cake.")
+#   print("2. Scream at the bear.")
+
+#   bear = input("> ")
+
+#   if bear == "1":
+#     print("The bear eats your face off. Good job!")
+#   elif bear == "2":
+#     print("The bear eats your legs off. Good job!")
+#   else:
+#     print(f"Well, doing {bear} is probably better.")
+#     print("Bear runs away.")
+
+# elif door == "2":
+#   print("You stare into the endless abyss at Cthulhu's retina.")
+#   print("1. Blueberries.")
+#   print("2. Yellow jacket clothespins.")
+#   print("3. Understanding revlovers yelling melodies.")
+
+#   insanity = input("> ")
+
+#   if insanity == "1" or insanity == "2":
+#     print("Your body survives powered by a mind of jello")
+#     print("Good job!")
+#   else:
+#     print("The insanity rots your eyes into a pool of muck.")
+#     print("Good job!")
+
+# else:
+#   print("You stamble around and fall on a knife and die. Good job!")
+
+
+
+
+# from sys import argv
+
+# script, people, cars, trucks = argv
+
+# # people = 30
+# # cars = 40
+# # trucks = 15
+
+# if cars > people:
+#   print("We should take the cars.")
+# elif cars < people:
+#   print("We should not take the cars.")
+# else:
+#   print("We can't decide.")
+
+# if trucks > cars:
+#   print("That's too many trucks.")
+# elif trucks < cars:
+#   print("Maybe we could take the trucks.")
+# else:
+#   print("We still can't decide.")
+
+# if people < trucks:
+#   print("Alright, let's just take the trucks.")
+# else:
+#   print("Fine, let's stay home then.")
+
+
+
+
+
+# people = 20
+# cats = 30
+# dogs = 15
+
+# if people < cats:
+#   print("Too many cats! The world is doomed!")
+
+# if people > cats:
+#   print("Not many cats! The worlds is saved!") 
+
+# if people < dogs:
+#   print("The world is drooled on!")
+
+# if people > dogs:
+#   print("The world is dry")
+
+# dogs += 5
+
+# if people >= dogs:
+#   print("People are greater than dogs or equal to dogs")
+
+# if people <= dogs:
+#   print("People are less than dogs or equal to dogs")
+
+# if people == dogs:
+#   print("People are dogs")
 
 
 
