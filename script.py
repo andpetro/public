@@ -1,28 +1,34 @@
+states = {
+  'Oregano': 'OR',
+  'Florida': 'FL',
+  'Califronia': 'CA',
+  'New York': 'NY',
+  'Michigan': 'MI'
+}
 
-ten_things = "Apples Oranges Crows Telephone Light Sugar"
+cities = {
+  'CA': 'San Francisco',
+  'MI': 'Detroit',
+  'FL': 'Jacksonville'
+}
 
-print("Wait there are not 10 things in that list. Let's fix that.")
+cities['NY'] = 'New York'
+cities['OR'] = 'Portland'
 
-stuff = ten_things.split(' ')
-more_stuff = ["Day", "Night", "Song", "Frisbee",
-              "Corn", "Babana", "Girl", "Boy"]
+print('-' * 30)
 
-while len(stuff)!= 10:
-  next_one = more_stuff.pop()
-  print("Adding", next_one)
-  stuff.append(next_one)
-  print(f"There are {len(stuff)} items now")
+print("NY State has: ", cities['NY'])
+print("OR State has: ", cities['OR'])
 
-print("There we go", stuff)
+print('-' * 30)
+print("Michigan's abbreviation is: ", states['Michigan'])
 
-print("Let's do some things with stuff")
+print('-' * 30)
+print("Michigan has: ", cities[states['Michigan']])
 
-print(stuff[1])
-print(stuff[-2]) # whoa!
-print(' '.join(stuff)) #what? cool!
-print('#'.join(stuff[3:5])) #super stellar
-
-
+print('-' * 30)
+for state, abbrev in list(states.items()):
+  print(f"{state} is abbriviated {abbrev}")
 
 
 # from sys import exit
