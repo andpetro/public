@@ -1,34 +1,56 @@
-states = {
-  'Oregano': 'OR',
-  'Florida': 'FL',
-  'Califronia': 'CA',
-  'New York': 'NY',
-  'Michigan': 'MI'
-}
+class Song(object):
+  def _init_(self, lyrics):
+    self.lyrics = lyrics
+  
+  def sing_me_a_song(self):
+    for line in self.lyrics:
+      print(line)
 
-cities = {
-  'CA': 'San Francisco',
-  'MI': 'Detroit',
-  'FL': 'Jacksonville'
-}
 
-cities['NY'] = 'New York'
-cities['OR'] = 'Portland'
+happy_bday = Song(["Happy birthday to you", "I don't want to get sued"])
 
-print('-' * 30)
+bulls_on_parade = Song(["They rally around tha family",
+"With pockets full of shells"])
 
-print("NY State has: ", cities['NY'])
-print("OR State has: ", cities['OR'])
+happy_bday.sing_me_a_song()
+bulls_on_parade.sing_me_a_song()
 
-print('-' * 30)
-print("Michigan's abbreviation is: ", states['Michigan'])
 
-print('-' * 30)
-print("Michigan has: ", cities[states['Michigan']])
 
-print('-' * 30)
-for state, abbrev in list(states.items()):
-  print(f"{state} is abbriviated {abbrev}")
+
+
+
+# states = {
+#   'Oregano': 'OR',
+#   'Florida': 'FL',
+#   'Califronia': 'CA',
+#   'New York': 'NY',
+#   'Michigan': 'MI'
+# }
+
+# cities = {
+#   'CA': 'San Francisco',
+#   'MI': 'Detroit',
+#   'FL': 'Jacksonville'
+# }
+
+# cities['NY'] = 'New York'
+# cities['OR'] = 'Portland'
+
+# print('-' * 30)
+
+# print("NY State has: ", cities['NY'])
+# print("OR State has: ", cities['OR'])
+
+# print('-' * 30)
+# print("Michigan's abbreviation is: ", states['Michigan'])
+
+# print('-' * 30)
+# print("Michigan has: ", cities[states['Michigan']])
+
+# print('-' * 30)
+# for state, abbrev in list(states.items()):
+#   print(f"{state} is abbriviated {abbrev}")
 
 
 # from sys import exit
